@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F6A0486A84900D96B5E /* FinalProject.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* FinalProject.1 */; };
+		E08328E310D44F2800D0177D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08328E210D44F2800D0177D /* GLUT.framework */; };
+		E08328E510D44F2800D0177D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08328E410D44F2800D0177D /* OpenGL.framework */; };
+		E083291C10D44F4F00D0177D /* BasicMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328EB10D44F4F00D0177D /* BasicMath.cpp */; };
+		E083291D10D44F4F00D0177D /* bezier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328ED10D44F4F00D0177D /* bezier.cpp */; };
+		E083291F10D44F4F00D0177D /* BoundingSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328F110D44F4F00D0177D /* BoundingSphere.cpp */; };
+		E083292010D44F4F00D0177D /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328F310D44F4F00D0177D /* Camera.cpp */; };
+		E083292110D44F4F00D0177D /* Frustum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328F510D44F4F00D0177D /* Frustum.cpp */; };
+		E083292210D44F4F00D0177D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328F710D44F4F00D0177D /* main.cpp */; };
+		E083292310D44F4F00D0177D /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328F810D44F4F00D0177D /* Matrix4.cpp */; };
+		E083292410D44F4F00D0177D /* Model3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328FA10D44F4F00D0177D /* Model3D.cpp */; };
+		E083292510D44F4F00D0177D /* Moon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328FC10D44F4F00D0177D /* Moon.cpp */; };
+		E083292610D44F4F00D0177D /* Object3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08328FE10D44F4F00D0177D /* Object3D.cpp */; };
+		E083292710D44F4F00D0177D /* objreader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290010D44F4F00D0177D /* objreader.cpp */; };
+		E083292810D44F4F00D0177D /* ParticleTerrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290210D44F4F00D0177D /* ParticleTerrain.cpp */; };
+		E083292910D44F4F00D0177D /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290410D44F4F00D0177D /* Plane.cpp */; };
+		E083292A10D44F4F00D0177D /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290610D44F4F00D0177D /* Planet.cpp */; };
+		E083292B10D44F4F00D0177D /* ppmLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290810D44F4F00D0177D /* ppmLoader.cpp */; };
+		E083292C10D44F4F00D0177D /* SceneGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290A10D44F4F00D0177D /* SceneGraph.cpp */; };
+		E083292D10D44F4F00D0177D /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290C10D44F4F00D0177D /* shader.cpp */; };
+		E083292E10D44F4F00D0177D /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083290E10D44F4F00D0177D /* Terrain.cpp */; };
+		E083292F10D44F4F00D0177D /* trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291010D44F4F00D0177D /* trackball.cpp */; };
+		E083293010D44F4F00D0177D /* Transforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291210D44F4F00D0177D /* Transforms.cpp */; };
+		E083293110D44F4F00D0177D /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291410D44F4F00D0177D /* Tree.cpp */; };
+		E083293210D44F4F00D0177D /* Universe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291610D44F4F00D0177D /* Universe.cpp */; };
+		E083293310D44F4F00D0177D /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291810D44F4F00D0177D /* Vector3.cpp */; };
+		E083293410D44F4F00D0177D /* Vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E083291A10D44F4F00D0177D /* Vector4.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* FinalProject.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8DD76F6C0486A84900D96B5E /* FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* FinalProject.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FinalProject.1; sourceTree = "<group>"; };
+		E08328E210D44F2800D0177D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		E08328E410D44F2800D0177D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E08328EB10D44F4F00D0177D /* BasicMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasicMath.cpp; path = ../BasicMath.cpp; sourceTree = SOURCE_ROOT; };
+		E08328EC10D44F4F00D0177D /* BasicMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicMath.h; path = ../BasicMath.h; sourceTree = SOURCE_ROOT; };
+		E08328ED10D44F4F00D0177D /* bezier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bezier.cpp; path = ../bezier.cpp; sourceTree = SOURCE_ROOT; };
+		E08328EE10D44F4F00D0177D /* bezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bezier.h; path = ../bezier.h; sourceTree = SOURCE_ROOT; };
+		E08328EF10D44F4F00D0177D /* BezierObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BezierObject.cpp; path = ../BezierObject.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F010D44F4F00D0177D /* BezierObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BezierObject.h; path = ../BezierObject.h; sourceTree = SOURCE_ROOT; };
+		E08328F110D44F4F00D0177D /* BoundingSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoundingSphere.cpp; path = ../BoundingSphere.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F210D44F4F00D0177D /* BoundingSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoundingSphere.h; path = ../BoundingSphere.h; sourceTree = SOURCE_ROOT; };
+		E08328F310D44F4F00D0177D /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = ../Camera.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F410D44F4F00D0177D /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ../Camera.h; sourceTree = SOURCE_ROOT; };
+		E08328F510D44F4F00D0177D /* Frustum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Frustum.cpp; path = ../Frustum.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F610D44F4F00D0177D /* Frustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Frustum.h; path = ../Frustum.h; sourceTree = SOURCE_ROOT; };
+		E08328F710D44F4F00D0177D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F810D44F4F00D0177D /* Matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix4.cpp; path = ../Matrix4.cpp; sourceTree = SOURCE_ROOT; };
+		E08328F910D44F4F00D0177D /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix4.h; path = ../Matrix4.h; sourceTree = SOURCE_ROOT; };
+		E08328FA10D44F4F00D0177D /* Model3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Model3D.cpp; path = ../Model3D.cpp; sourceTree = SOURCE_ROOT; };
+		E08328FB10D44F4F00D0177D /* Model3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model3D.h; path = ../Model3D.h; sourceTree = SOURCE_ROOT; };
+		E08328FC10D44F4F00D0177D /* Moon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Moon.cpp; path = ../Moon.cpp; sourceTree = SOURCE_ROOT; };
+		E08328FD10D44F4F00D0177D /* Moon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Moon.h; path = ../Moon.h; sourceTree = SOURCE_ROOT; };
+		E08328FE10D44F4F00D0177D /* Object3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object3D.cpp; path = ../Object3D.cpp; sourceTree = SOURCE_ROOT; };
+		E08328FF10D44F4F00D0177D /* Object3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object3D.h; path = ../Object3D.h; sourceTree = SOURCE_ROOT; };
+		E083290010D44F4F00D0177D /* objreader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = objreader.cpp; path = ../objreader.cpp; sourceTree = SOURCE_ROOT; };
+		E083290110D44F4F00D0177D /* objreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objreader.h; path = ../objreader.h; sourceTree = SOURCE_ROOT; };
+		E083290210D44F4F00D0177D /* ParticleTerrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleTerrain.cpp; path = ../ParticleTerrain.cpp; sourceTree = SOURCE_ROOT; };
+		E083290310D44F4F00D0177D /* ParticleTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleTerrain.h; path = ../ParticleTerrain.h; sourceTree = SOURCE_ROOT; };
+		E083290410D44F4F00D0177D /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = ../Plane.cpp; sourceTree = SOURCE_ROOT; };
+		E083290510D44F4F00D0177D /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = ../Plane.h; sourceTree = SOURCE_ROOT; };
+		E083290610D44F4F00D0177D /* Planet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Planet.cpp; path = ../Planet.cpp; sourceTree = SOURCE_ROOT; };
+		E083290710D44F4F00D0177D /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Planet.h; path = ../Planet.h; sourceTree = SOURCE_ROOT; };
+		E083290810D44F4F00D0177D /* ppmLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ppmLoader.cpp; path = ../ppmLoader.cpp; sourceTree = SOURCE_ROOT; };
+		E083290910D44F4F00D0177D /* ppmLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ppmLoader.h; path = ../ppmLoader.h; sourceTree = SOURCE_ROOT; };
+		E083290A10D44F4F00D0177D /* SceneGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGraph.cpp; path = ../SceneGraph.cpp; sourceTree = SOURCE_ROOT; };
+		E083290B10D44F4F00D0177D /* SceneGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGraph.h; path = ../SceneGraph.h; sourceTree = SOURCE_ROOT; };
+		E083290C10D44F4F00D0177D /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../shader.cpp; sourceTree = SOURCE_ROOT; };
+		E083290D10D44F4F00D0177D /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader.h; path = ../shader.h; sourceTree = SOURCE_ROOT; };
+		E083290E10D44F4F00D0177D /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Terrain.cpp; path = ../Terrain.cpp; sourceTree = SOURCE_ROOT; };
+		E083290F10D44F4F00D0177D /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Terrain.h; path = ../Terrain.h; sourceTree = SOURCE_ROOT; };
+		E083291010D44F4F00D0177D /* trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = trackball.cpp; path = ../trackball.cpp; sourceTree = SOURCE_ROOT; };
+		E083291110D44F4F00D0177D /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trackball.h; path = ../trackball.h; sourceTree = SOURCE_ROOT; };
+		E083291210D44F4F00D0177D /* Transforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Transforms.cpp; path = ../Transforms.cpp; sourceTree = SOURCE_ROOT; };
+		E083291310D44F4F00D0177D /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transforms.h; path = ../Transforms.h; sourceTree = SOURCE_ROOT; };
+		E083291410D44F4F00D0177D /* Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tree.cpp; path = ../Tree.cpp; sourceTree = SOURCE_ROOT; };
+		E083291510D44F4F00D0177D /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = ../Tree.h; sourceTree = SOURCE_ROOT; };
+		E083291610D44F4F00D0177D /* Universe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Universe.cpp; path = ../Universe.cpp; sourceTree = SOURCE_ROOT; };
+		E083291710D44F4F00D0177D /* Universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Universe.h; path = ../Universe.h; sourceTree = SOURCE_ROOT; };
+		E083291810D44F4F00D0177D /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3.cpp; path = ../Vector3.cpp; sourceTree = SOURCE_ROOT; };
+		E083291910D44F4F00D0177D /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ../Vector3.h; sourceTree = SOURCE_ROOT; };
+		E083291A10D44F4F00D0177D /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector4.cpp; path = ../Vector4.cpp; sourceTree = SOURCE_ROOT; };
+		E083291B10D44F4F00D0177D /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector4.h; path = ../Vector4.h; sourceTree = SOURCE_ROOT; };
+		E083293610D44FAD00D0177D /* bump_map.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = bump_map.frag; path = ../bump_map.frag; sourceTree = SOURCE_ROOT; };
+		E083293710D44FAD00D0177D /* bump_map.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = bump_map.vert; path = ../bump_map.vert; sourceTree = SOURCE_ROOT; };
+		E083294D10D44FAD00D0177D /* toon.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon.frag; path = ../toon.frag; sourceTree = SOURCE_ROOT; };
+		E083294E10D44FAD00D0177D /* toon.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toon.vert; path = ../toon.vert; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08328E310D44F2800D0177D /* GLUT.framework in Frameworks */,
+				E08328E510D44F2800D0177D /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* FinalProject */ = {
+			isa = PBXGroup;
+			children = (
+				E083293510D44FA100D0177D /* Shaders */,
+				E08328EA10D44F3400D0177D /* Headers */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				E08328E210D44F2800D0177D /* GLUT.framework */,
+				E08328E410D44F2800D0177D /* OpenGL.framework */,
+			);
+			name = FinalProject;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E08328EB10D44F4F00D0177D /* BasicMath.cpp */,
+				E08328ED10D44F4F00D0177D /* bezier.cpp */,
+				E08328EF10D44F4F00D0177D /* BezierObject.cpp */,
+				E08328F110D44F4F00D0177D /* BoundingSphere.cpp */,
+				E08328F310D44F4F00D0177D /* Camera.cpp */,
+				E08328F510D44F4F00D0177D /* Frustum.cpp */,
+				E08328F710D44F4F00D0177D /* main.cpp */,
+				E08328F810D44F4F00D0177D /* Matrix4.cpp */,
+				E08328FA10D44F4F00D0177D /* Model3D.cpp */,
+				E08328FC10D44F4F00D0177D /* Moon.cpp */,
+				E08328FE10D44F4F00D0177D /* Object3D.cpp */,
+				E083290010D44F4F00D0177D /* objreader.cpp */,
+				E083290210D44F4F00D0177D /* ParticleTerrain.cpp */,
+				E083290410D44F4F00D0177D /* Plane.cpp */,
+				E083290610D44F4F00D0177D /* Planet.cpp */,
+				E083290810D44F4F00D0177D /* ppmLoader.cpp */,
+				E083290A10D44F4F00D0177D /* SceneGraph.cpp */,
+				E083290C10D44F4F00D0177D /* shader.cpp */,
+				E083290E10D44F4F00D0177D /* Terrain.cpp */,
+				E083291010D44F4F00D0177D /* trackball.cpp */,
+				E083291210D44F4F00D0177D /* Transforms.cpp */,
+				E083291410D44F4F00D0177D /* Tree.cpp */,
+				E083291610D44F4F00D0177D /* Universe.cpp */,
+				E083291810D44F4F00D0177D /* Vector3.cpp */,
+				E083291A10D44F4F00D0177D /* Vector4.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* FinalProject */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* FinalProject.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		E08328EA10D44F3400D0177D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E08328FD10D44F4F00D0177D /* Moon.h */,
+				E08328FF10D44F4F00D0177D /* Object3D.h */,
+				E083290110D44F4F00D0177D /* objreader.h */,
+				E083290310D44F4F00D0177D /* ParticleTerrain.h */,
+				E083290510D44F4F00D0177D /* Plane.h */,
+				E083290710D44F4F00D0177D /* Planet.h */,
+				E083290910D44F4F00D0177D /* ppmLoader.h */,
+				E083290B10D44F4F00D0177D /* SceneGraph.h */,
+				E083290D10D44F4F00D0177D /* shader.h */,
+				E083290F10D44F4F00D0177D /* Terrain.h */,
+				E083291110D44F4F00D0177D /* trackball.h */,
+				E083291310D44F4F00D0177D /* Transforms.h */,
+				E083291510D44F4F00D0177D /* Tree.h */,
+				E083291710D44F4F00D0177D /* Universe.h */,
+				E083291910D44F4F00D0177D /* Vector3.h */,
+				E083291B10D44F4F00D0177D /* Vector4.h */,
+				E08328EC10D44F4F00D0177D /* BasicMath.h */,
+				E08328EE10D44F4F00D0177D /* bezier.h */,
+				E08328F010D44F4F00D0177D /* BezierObject.h */,
+				E08328F210D44F4F00D0177D /* BoundingSphere.h */,
+				E08328F410D44F4F00D0177D /* Camera.h */,
+				E08328F610D44F4F00D0177D /* Frustum.h */,
+				E08328F910D44F4F00D0177D /* Matrix4.h */,
+				E08328FB10D44F4F00D0177D /* Model3D.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		E083293510D44FA100D0177D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E083293610D44FAD00D0177D /* bump_map.frag */,
+				E083293710D44FAD00D0177D /* bump_map.vert */,
+				E083294D10D44FAD00D0177D /* toon.frag */,
+				E083294E10D44FAD00D0177D /* toon.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* FinalProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "FinalProject" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalProject;
+			productInstallPath = "$(HOME)/bin";
+			productName = FinalProject;
+			productReference = 8DD76F6C0486A84900D96B5E /* FinalProject */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "FinalProject" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* FinalProject */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* FinalProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E083291C10D44F4F00D0177D /* BasicMath.cpp in Sources */,
+				E083291D10D44F4F00D0177D /* bezier.cpp in Sources */,
+				E083291F10D44F4F00D0177D /* BoundingSphere.cpp in Sources */,
+				E083292010D44F4F00D0177D /* Camera.cpp in Sources */,
+				E083292110D44F4F00D0177D /* Frustum.cpp in Sources */,
+				E083292210D44F4F00D0177D /* main.cpp in Sources */,
+				E083292310D44F4F00D0177D /* Matrix4.cpp in Sources */,
+				E083292410D44F4F00D0177D /* Model3D.cpp in Sources */,
+				E083292510D44F4F00D0177D /* Moon.cpp in Sources */,
+				E083292610D44F4F00D0177D /* Object3D.cpp in Sources */,
+				E083292710D44F4F00D0177D /* objreader.cpp in Sources */,
+				E083292810D44F4F00D0177D /* ParticleTerrain.cpp in Sources */,
+				E083292910D44F4F00D0177D /* Plane.cpp in Sources */,
+				E083292A10D44F4F00D0177D /* Planet.cpp in Sources */,
+				E083292B10D44F4F00D0177D /* ppmLoader.cpp in Sources */,
+				E083292C10D44F4F00D0177D /* SceneGraph.cpp in Sources */,
+				E083292D10D44F4F00D0177D /* shader.cpp in Sources */,
+				E083292E10D44F4F00D0177D /* Terrain.cpp in Sources */,
+				E083292F10D44F4F00D0177D /* trackball.cpp in Sources */,
+				E083293010D44F4F00D0177D /* Transforms.cpp in Sources */,
+				E083293110D44F4F00D0177D /* Tree.cpp in Sources */,
+				E083293210D44F4F00D0177D /* Universe.cpp in Sources */,
+				E083293310D44F4F00D0177D /* Vector3.cpp in Sources */,
+				E083293410D44F4F00D0177D /* Vector4.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = FinalProject;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = FinalProject;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

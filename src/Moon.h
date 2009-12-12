@@ -3,8 +3,6 @@
  *  BumpMap
  *
  *  Created by Andrew Huynh on 12/10/09.
- *  Copyright 2009 ATHLabs. All rights reserved.
- *
  */
 
 #include <GLUT/GLUT.h>
